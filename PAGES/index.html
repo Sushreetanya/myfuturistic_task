@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        body{
+            margin: 0;
+            background: gray;
+        }
+        nav{
+            background:#594848 ;
+            width: 100%;
+            overflow: auto;
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        li{
+            float: left;
+        }
+        nav a{
+            width: 120px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            background: #594848;
+            font-size: 17px;
+            color: white;
+            padding: 20px 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav a:hover{
+            background: skyblue;
+            color: black;
+        }
+        .container{
+            max-width: 1200px;
+            margin:auto;
+            background-color: rgb(245, 249, 249);
+            overflow: auto;
+        }
+        .gallery{
+            margin: 5px;
+            border: 11px solid #ccc;
+            float: left;
+            width: 390px;
+        }
+        .gallery img{
+            width: 369px;
+            height: 248px;
+        }
+        .desc{
+            padding: 15px;
+            text-align: center;
+        }
+
+        .action__btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 3px 79px;
+  padding: 17px;
+
+}
+
+.portfolio {
+  color: var(--primary-color);
+}
+
+.portfolio:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+    </style>
+</head>
+<body>
+   <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Download</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+   </nav> 
+  <div class="container">
+    <div class="gallery">
+        <img src="5666.jpg">
+        <div class="desc">
+            FIRST IMAGE : JAGANNATH DHAM,PURI
+        </div>
+    </div>
+
+
+    <div class="gallery">
+        <img src="2256.jpg">
+        <div class="desc">
+            SECOND IMAGE : LINGARAJ TEMPLE
+        </div>
+    </div>
+
+
+    <div class="gallery">
+        <img src="2255.jpg">
+        <div class="desc">
+            THIRD IMAGE : RAM MANDIR
+        </div>
+    </div>
+
+
+    <div class="gallery">
+        <img src="4567.jpg">
+        <div class="desc">
+            FOURTH IMAGE : KHANDAGIRI UDAYGIRI
+        </div>
+    </div>
+
+
+    <div class="gallery">
+        <img src="1959.jpg">
+        <div class="desc">
+            FIFTH IMAGE : ISKCON
+            <div class="action__btns">
+    
+                <a href="post.html"><button class="portfolio">Read More</button></a>
+              </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <img src="9999.jpg">
+        <div class="desc">
+                SIXTH IMAGE : DEVKUND
+        </div>
+    </div>
+
+  </div>
+
+ <div class="action__btns">
+    <a href="post.html"><button class="portfolio">More INFO ABOUT THE IMG</button></a>
+ </div>
+</body>
+</html>
